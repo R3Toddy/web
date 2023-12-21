@@ -1,0 +1,122 @@
+header {
+    background-color: #318ce7;
+    text-align: center;
+    height: 15vh;
+    font-size: 2em;
+    color: #ffffff;
+    line-height: 15vh;
+}
+
+#entrada-dados {
+
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.entrada-texto {
+    flex: 1;
+    /*todos elementos msm tamanho*/
+    margin: 5px;
+    height: 35px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6aa9e9;
+    outline: none;
+
+}
+
+.entrada-texto:focus {
+    border-color: #84828b;
+}
+
+.botao-enviar {
+    flex: 1;
+    /*todos elementos msm tamanho*/
+    margin: 5px;
+    height: 35px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6aa9e9;
+    outline: none;
+    cursor: pointer;
+    transition: 0.7s;
+
+}
+
+.botao-enviar:hover {
+    background-color: #02386e;
+    border: #2a81d8;
+    color: white;
+}
+
+#tabela {
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#tabela th {
+    background-color: #2a81d8;
+
+    color: white;
+    font-weight: 100;
+
+}
+
+#tabela td,
+th {
+
+    border: 1px solid #6b90e9ba;
+    padding: 10px;
+
+}
+
+
+#tabela td {
+    padding: 5px;
+
+}
+
+/*linhas pares*/
+#tabela tr:nth-child(odd){  /* even ou odd*/
+    background-color: #f0f0f0;
+}
+
+
+/*linhas impares*/
+#tabela tr:nth-child(even){  /* even ou odd*/
+    background-color: rgb(126, 193, 255);
+}
+
+
+#tabela tr:hover{
+    background-color: #5783bc;
+}
+
+.botao-remover{
+    border-radius:9px ;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    color: #970000;
+    border: 0px;
+    transition: 0.5s;
+    
+    
+    
+}
+
+.botao-remover:hover{
+    background-color: #970101;
+    border-radius: 9px;
+    color: #ffffff;
+    border: 0px;
+
+}
