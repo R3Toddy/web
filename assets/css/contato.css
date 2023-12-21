@@ -1,0 +1,154 @@
+.painel {
+    background: var(--cor-cinza-escuro);
+    height: 40vh;
+}
+
+.conteudo {
+    text-align: center;
+    width: 600px;
+    padding-top: 50px;
+    margin: auto;
+    color: var(--cor-branca);
+    cursor: default;
+    user-select: none;
+
+}
+
+
+.conteudo h2 {
+    display: inline;
+    /*faz com que o elemento ocupe somente o espaço dele*/
+    border-bottom: 3px solid var(--cor-dourada);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.conteudo a {
+    text-decoration: none;
+
+}
+
+.conteudo p {
+    font-size: 18px;
+    margin-block: 30px;
+    /*top e bottom*/
+    line-height: 1.5em;
+}
+
+
+.conteudo a {
+    background-color: var(--cor-verde-limao);
+    color: var(--cor-branca);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.conteudo a:hover {
+    background: var(--cor-dourada);
+    padding: 1.1em;
+
+}
+
+
+.container {
+    width: 800px;
+    /*margin horizontal centraliza formulario (filho)*/
+    margin-inline: auto;
+    display: flex;
+
+
+
+}
+
+form {
+    width: 100%;
+    background: var(--cor-branca);
+    border: 1px solid var(--cor-cinza);
+    border-radius: 10px;
+    /*vertical horizontal*/
+    padding: 40px 40px;
+    margin: -60px 0px 40px -40px;
+    z-index: 1;
+    box-shadow: 12px 12px 12px var(--cor-cinza);
+}
+
+
+/*padrao de label e input é inline = coupa somente o espaço dele*/
+form label,
+legend {
+
+    display: block;
+    /*muda de inline para block ocupado a linha inteira*/
+    font-size: 22px;
+    color: var(--cor-texto);
+    margin: 10px 0 10px 10px;
+}
+
+
+form >input,
+textarea {
+    min-width: 95%;
+    font-size: 22px;
+    color: var(--cor-texto);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--cor-cinza-claro);
+    border-radius: 10px;
+    outline: none;
+}
+
+
+form>input:focus {
+    border: 2.1px solid var(--cor-verde-limao);
+}
+
+form>textarea {
+    max-width: 95%;
+    min-height: 100px;
+    max-width: 300px;
+}
+
+
+form>fieldset {
+    /*margem verticla superior e inferior*/
+    margin-block: 20px;
+}
+
+form>fieldset select {
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+form>label:nth-last-child(2) {
+    margin-block: 20px;
+}
+
+
+form>button{
+    background: var(--cor-verde-limao);
+    width: 35%;
+    padding: 15px 0;
+    margin-left: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+form>button:hover{
+    
+    background: var(--cor-dourada);
+    /*aumenta escala do botão em 20%*/
+    transform: scale(1.1);
+}
+
