@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: aquamarine;
+    height: 100vh;
+
+    /*posicionamento flex*/
+    display: flex;
+
+    /*direção padrão*/
+    flex-direction: row;
+    /*row ou colum*/
+    flex-wrap: wrap;
+
+
+    /*alinhamento no sentido da linha (no caso row)*/
+    /*center, space around, space-evenly*/
+    justify-content: space-around;
+
+    /*alinhamento vertical*/
+    /*start, center, end*/
+    align-items: center;
+}
+
+.filho {
+    background: red;
+    width: 40%;
+    height: 40%;
+    border: 1px solid black;
+    font-size: 10px;
+
+}
